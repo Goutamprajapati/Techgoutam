@@ -1,305 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>DeveloperGtm</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <header class="nav text-gray-600 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-              <img class="logoimg" src="logo.png" alt="">
-            </svg>
-            <span class="logo ml-3 text-xl">Techgoutam</span>
-          </a>
-          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center cursor-pointer">
-            <a class="mr-5 hover:text-gray-900" href="http://127.0.0.1:5500/index.html#home">Home</a>
-            <a class="mr-5 hover:text-gray-900" href="#course">Course</a>
-            <a class="mr-5 hover:text-gray-900" href="#">Tutorial</a>
-            <a class="mr-5 hover:text-gray-900" href="#">Notes</a>
-            <a class="mr-5 hover:text-gray-900" href="#contact">Contact</a>
-            <a class="mr-5 hover:text-gray-900" href="#">About</a>
-          </nav>
+    <div class="navbar">
+        <img src="logo.png" alt="Logo">
 
-          <!-- <div class="mode">
-                     
-            <span class="change">OFF</span>
-        </div> -->
-         
-
-          <button class=" btn inline-flex items-center bg-blue-300 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 ">Login
-            
-            
-            </svg>
-          </button>
-
-          <button class=" btn inline-flex items-center bg-blue-300 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 ml-3">Sign Up
-            
-              
-            </svg>
-          </button>
+        <div class="srch">
+            <input type="search" name="search" id="search" placeholder="search">
+            <i id="srch-icon" class="srch-icon fa-solid fa-magnifying-glass"></i>
         </div>
-      </header>
+        <div class="menu" id="menu">
+            <a id="" href="#">Home</a>
+            <a id="" href="#">Course</a>
+            <a id="" href="#">About</a>
+            <a id="Join" href="#">Join For Free</a>
+            <!-- <a href="#"></a> -->
+        </div>
+        <div class="email">
+            <i class="fa-regular fa-envelope"></i>
+            <span>officialgoutam23@gmail.com</span>
+        </div>
+    </div>
+    
+    <!-- HERO SECTION IMAGE SHOW ON BACKGROUND  -->
+    <div class="main-container">    </div>
 
-        <!-- hero section -->
+    <div class="hero-sec">
+        <h1>Learn For Coding <br>
+        & <span>Editing...</span></h1>
+        <p>Welcome to <span  class="span2">DeveloperGtm</span> , where we're passionate about all things code. Our mission is to simplify coding for everyone, offering beginner-friendly tutorials, in-depth guides, and a supportive community. Whether you're a novice or a seasoned pro, join us on this coding journey and unlock your full tech potential. Start coding with us today and be part of a growing community of tech enthusiasts. Together, let's turn your coding dreams into reality.</p>
 
+       <div class="twobtn">
+        <button id="btnone">login</button>
+        <button id="btntwo">Register</button>
+       </div>
 
-        <section class="text-gray-600 body-font">
-          <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Welcome to Techgoutam
-                <br class="hidden lg:inline-block"><p class="text-two ">Learn Coding...</p>
-              </h1>
-              <p class="text-top mb-8 leading-relaxed">Confused on which course to take? I have got you covered. Browse courses and find out the best course for you. Its free! Techgoutam is my attempt to teach basics and those coding techniques to people in short time which took me ages to learn.</p>
-              <div class="flex justify-center">
-                <button class="btn-free inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Free Course</button>
-                <button class="btn-blog ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Blog</button>
-              </div>
+       <div class="sectwo">
+        <img src="bg.jpg" alt="">
+       </div>
+
+       <div class="cousers">
+        <span class="co">Course</span>
+
+        <div class="course-sec">
+            <div class="all-box box">
+                <img src="html.jpg" alt="html image">
+                <p>FREE COURSE</p>
+                <p class="para">HTML Beginner course</p>
+                <p class="about-sec about-html">
+                    HTML is very importent language In web development and HTML is very Demanded Languge...
+                </p>
+                <button>Watch Now</button>
             </div>
-            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 nav-sec">
-              <img class="object-cover object-center rounded" alt="hero" src="banner.jpeg">
+
+            <div class="all-box box">
+                <img src="js.webp" alt="html image">
+                <p>FREE COURSE</p>
+                <p class="java para">JavaScript Beginner course</p>
+                <p class="about-sec about-js">
+                    JS is very importent language In web development and HTML is very Demanded Languge...
+                </p>
+                <button>Watch Now</button>
             </div>
-          </div>
-        </section>
 
-
-        <!-- video section -->
-
-        <section class="text-gray-600 body-font"><span class="rendom text-3xl font-medium title-font text-gray-900 mb-12 text-center" id="course">Rendom Course</span>
-          <div class="container px-5 py-24 mx-auto">
-            <div class="flex flex-wrap -m-4">
-              <div class="box p-4 md:w-1/3">
-                <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                  <img class="img-h lg:h-48 md:h-36 w-full object-cover object-center" src="JS-Thumb.webp" alt="blog">
-                  <div class="p-6">
-                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Ultimate JavaScript Course</h1>
-                    <p class="leading-relaxed mb-3">This latest JavaScript course comes with premium curriculum that covers everything from basics to advance. On top of that, you will get my handwritten notes of JS for completely free. What are you waiting for? Just Enroll Buddy</p>
-                    <div class="flex items-center flex-wrap ">
-                      <a class="wat text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Watch Now
-                 
-                          <path d="M5 12h14"></path>
-                          <path d="M12 5l7 7-7 7"></path>
-                        </svg>
-                      </a>
-                     
-                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                       
-                        </svg>
-                      </span>
-                      <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                       
-                          
-                        </svg>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-
-              <div class="box p-4 md:w-1/3">
-                <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                  <img class="img-hlg:h-48 md:h-36 w-full object-cover object-center" src="rec.webp" alt="blog">
-                  <div class="p-6">
-                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">React JS Tutorials For Beginners</h1>
-                    <p class="leading-relaxed mb-3">React is a free and open-source front-end JavaScript library. This series will cover React from starting to the end. We will learn react from the ground up!</p>
-                    <div class="flex items-center flex-wrap">
-                      <a class="top wat text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Watch Now
-                      
-                          <path d="M5 12h14"></path>
-                          <path d="M12 5l7 7-7 7"></path>
-                        </svg>
-                      </a>
-               
-                        
-                       
-                        </svg>
-                      </span>
-                      <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                       
-                          <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                        </svg>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-
-              <div class="box p-4 md:w-1/3">
-                <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                  <img class="img-h lg:h-48 md:h-36 w-full object-cover object-center" src="py.webp" alt="blog">
-                  <div class="p-6">
-                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Python Tutorials - 100 Days of Code</h1>
-                    <p class="leading-relaxed mb-3">Python is one of the most demanded programming languages in the job market. Surprisingly, it is equally easy to learn and master Python. Let's commit our 100 days of code to python!</p>
-                    <div class="flex items-center flex-wrap ">
-                      <a class="top-sec wat text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Watch Now
-                      
-                          <path d="M5 12h14"></path>
-                          <path d="M12 5l7 7-7 7"></path>
-                        </svg>
-                      </a>
-                  
-              
-     
-                        </svg>
-                      </span>
-                      <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-             
-                          <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                        </svg>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="all-box box">
+                <img src="css.png" alt="html image">
+                <p>FREE COURSE</p>
+                <p class="para">CSS Beginner course</p>
+                <p class="about-sec about-css">
+                    CSS is very importent language In web development and HTML is very Demanded Languge...
+                </p>
+                <button>Watch Now</button>
             </div>
-          </div>
-        </section>
 
-
-
-        <!-- text area -->
-
-        <section class="text-gray-600 body-font">
-          <div class="test container px-5 py-24 mx-auto">
-            <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">Testimonials</h1>
-            <div class="flex flex-wrap -m-4">
-              <div class="p-4 md:w-1/2 w-full">
-                <div class="text-box h-full bg-gray-100 p-8 rounded">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
-                    <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-                  </svg>
-                  <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
-                  <a class="inline-flex items-center">
-                    <img alt="testimonial" src="https://dummyimage.com/106x106" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-                    <span class="flex-grow flex flex-col pl-4">
-                      <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
-                      <span class="text-gray-500 text-sm">UI DEVELOPER</span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div class="p-4 md:w-1/2 w-full">
-                <div class="text-box bg-gray-100 p-8 rounded">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
-                    <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-                  </svg>
-                  <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
-                  <a class="inline-flex items-center">
-                    <img alt="testimonial" src="https://dummyimage.com/107x107" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-                    <span class="flex-grow flex flex-col pl-4">
-                      <span class="title-font font-medium text-gray-900">Alper Kamu</span>
-                      <span class="text-gray-500 text-sm">DESIGNER</span>
-                    </span>
-                  </a>
-                </div>
-              </div>
+            <div class="all-box box">
+                <img src="python.png" alt="html image">
+                <p>FREE COURSE</p>
+                <p class="py para">Pyhton Beginner course</p>
+                <p class="about-sec about-python">
+                  Python is very importent language In web development and HTML is very Demanded Languge...
+                </p>
+                <button>Watch Now</button>
             </div>
-          </div>
-        </section>
+        </div>
+       </div>
 
 
-        <!-- contact form -->
-
-        <div class="contact-sec text-3xl font-medium title-font text-gray-900 mb-12 text-center" id="contact">
-          <h1>Contact Us</h1>
-
-          <div class="input1">
-            <input type="text" name="" placeholder="Enter Your Name">
-          </div>
-
-          <div class="input1">
-            <input type="text" name="" placeholder="Enter Your Email">
-          </div>
-
-          <div class="input1">
-            <input type="text" name="" placeholder="Enter Your Contact No">
-          </div>
-
-          <div class="input1 msg-box">
-            <input type="text" name="" placeholder="Enter Your Message">
-          </div>
-
-          <div class="btn-msg2">
-            <input class="sub" type="button" value="Submit">
-          </div>
-
+       <div class="contact-sec">
+        <div class="container-one">
+            <h1>Contact Us</h1>
+            <div class="icon">
+                <i class="social fa-brands fa-square-facebook"></i>
+            <i class="social fa-brands fa-square-instagram"></i>
+            <i class="social fa-brands fa-square-github"></i>
+            <i class="social fa-solid fa-envelope"></i>
+            <i class="social fa-brands fa-youtube"></i>
+            </div>
         </div>
 
+        <div class="container-two">
+          
+           <div class="web">
+            <h1>Join Free Training</h1>
+            <p>It will not cost any money it only required your time if you are interested to start your career in web
+                development then join the free training.</p>
 
-
-      
-
-        <!-- footer  -->
-
-
-        <footer class="text-gray-600 body-font">
-          <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-              </svg>
-              <span class="ml-3 text-xl"></span>
-            </a>
-            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 Techgoutam
-              <a href="https://www.techgoutam.com/" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@techgoutam.com</a>
-            </p>
-            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-              <a class="text-gray-500">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                </svg>
-              </a>
-              <a class="ml-3 text-gray-500">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-              <a class="ml-3 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                </svg>
-              </a>
-              <a class="ml-3 text-gray-500">
-                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                </svg>
-              </a>
-            </span>
-          </div>
-        </footer>
-
-
-        
-
-
-        <!-- <script src=
-        "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
-            </script>
-        <script>
-          $( ".change" ).on("click", function() {
-              if( $( "body" ).hasClass( "dark" )) {
-                  $( "body" ).removeClass( "dark" );
-                  $( ".change" ).text( "OFF" );
-              } else {
-                  $( "body" ).addClass( "dark" );
-                  $( ".change" ).text( "ON" );
-              }
-          });
-      </script> -->
+                <button>Join Now</button>
+           </div>
+        </div>
+       </div>
+    
 </body>
 </html>
